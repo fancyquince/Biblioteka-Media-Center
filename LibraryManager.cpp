@@ -30,11 +30,11 @@ void LibraryManager::removeItem(int id)
         { 
             delete inventory[i];
             inventory.erase(inventory.begin() + i);
-            cout << "Usunięto pozycje o ID: " << id << endl;
+            cout << "Usunieto pozycje o ID: " << id << endl;
             return;
         }
     }
-    throw out_of_range("Błąd: Nie znaleziono pozycji o podanym ID!");
+    throw out_of_range("Blad: Nie znaleziono pozycji o podanym ID!");
 }
 
 void LibraryManager::showAll() const 

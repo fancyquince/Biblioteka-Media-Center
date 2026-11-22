@@ -5,5 +5,5 @@ Book::Book(int id, string title, string author, int pageCount): MediaItem(id, ti
 void Book::printDetails() const 
 {
     MediaItem::printDetails();
-    cout << " [Książka] Strony: " << pageCount;
+    cout << " [Ksiazka] Strony: " << pageCount;
 }
