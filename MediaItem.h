@@ -10,6 +10,7 @@ private:
     int id;
     string title;
     string author;
+    bool isBorrowed;
 
 public:
     MediaItem(int id = 0, string title = "Brak", string author = "Brak");
@@ -19,6 +20,9 @@ public:
     int getId() const;
     string getTitle() const;
     string getAuthor() const;
+
+    bool getIsBorrowed() const;
+    void setIsBorrowed(bool status);
 
     virtual void printDetails() const;
 
