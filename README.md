@@ -45,7 +45,7 @@ Wypożyczenie i podgląd konta użytkownika (Opcje 7 oraz 6):
 Po wypożyczeniu pozycji o ID 1 przez użytkownika o ID 101 (Jan Kowalski), status książki zmienia się na (WYPOZYCZONA), a pozycja pojawia się na liście wypożyczeń czytelnika:
 
 --- LISTA UZYTKOWNIKOW ---
-Uzytkownik [ID: 101] Jan Kowalski | Wypozyczone pozycje (1):
+Uzytkownik [ID: 101] Igor Młynarycz | Wypozyczone pozycje (1):
    - [1] Wladca Pierscieni
 --------------------------
 
