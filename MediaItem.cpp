@@ -1,6 +1,6 @@
 #include "MediaItem.h"
 
-MediaItem::MediaItem(int id, string title, string author): id(id), title(title), author(author) {}
+MediaItem::MediaItem(int id, string title, string author): id(id), title(title), author(author), isBorrowed(false) {}
 
 int MediaItem::getId() const 
 {
@@ -17,9 +17,20 @@ string MediaItem::getAuthor() const
     return author;
 }
 
+bool MediaItem::getIsBorrowed() const
+{
+    return isBorrowed;
+}
+
+void MediaItem::setIsBorrowed(bool status)
+{
+    isBorrowed = status;
+}
+
+
 void MediaItem::printDetails() const 
 {
-    cout << "[ID: " << id << "] " << title << " - " << author << endl;
+    cout << "[ID: " << id << "] " << title << " - " << author << (isBorrowed ? " (WYPOZYCZONA)" : " (DOSTEPNA)");
 }
 
 bool MediaItem::operator==(const MediaItem& other) const 
